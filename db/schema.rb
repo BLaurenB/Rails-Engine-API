@@ -52,10 +52,9 @@ ActiveRecord::Schema.define(version: 20180123021850) do
     t.citext "name"
     t.citext "description"
     t.integer "unit_price"
+    t.integer "merchant_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "merchant_id"
-    t.index ["merchant_id"], name: "index_items_on_merchant_id"
   end
 
   create_table "merchants", force: :cascade do |t|
@@ -80,6 +79,5 @@ ActiveRecord::Schema.define(version: 20180123021850) do
   add_foreign_key "invoice_items", "items", column: "items_id"
   add_foreign_key "invoices", "customers"
   add_foreign_key "invoices", "merchants"
-  add_foreign_key "items", "merchants"
   add_foreign_key "transactions", "invoices"
 end
