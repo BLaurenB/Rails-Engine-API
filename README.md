@@ -1,6 +1,7 @@
 # Rails Engine
 
-Rails engine (Sales Engine via Rails) is a RESTful Business Intelligence API written in the Rails framework. It returns JSON data for Merchants, Customers, Invoices, Items, and Transactions.  In addition to RESTful show and index pages, there are several BI requests available. Please see below for specific URIs.
+Rails engine (Sales Engine via Rails) is a RESTful Business Intelligence API written in the Rails framework. It returns JSON data for Merchants, Customers, Invoices, Items, and Transactions.  In addition to RESTful show and index pages, there are several BI requests available. Please visit the version of this repo hosted on Heroku, and see below for specific API endpoints to visit.
+https://boiling-retreat-20186.herokuapp.com/api/v1/items/1/best_day
 
 ## Getting Started
 
